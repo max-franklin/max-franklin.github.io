@@ -1,0 +1,76 @@
+#max-icon {
+    height: 42px;
+    width: 42px;
+}
+
+#profile {
+    height: 210px;
+    width: 210px;
+}
+
+#hello {
+    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Kavivanar', cursive; */
+    font-size: 48px;
+    text-align: center;
+}
+
+#pretty {
+    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Kavivanar', cursive; */
+    font-size: 36px;
+    text-align: left;
+}
+
+#body-style {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 70px;
+    background-color: #f2f8fa;
+}
+
+#blue-nav {
+    background-color: #c1e0ff;
+    border: none;
+}
+
+#darkline {
+    border: 1px solid rgb(68, 68, 68);
+}
+
+img#main-photos {
+    width: 320px;
+    height: 240px;
+}
+
+#dark-text {
+    color: rgb(68, 68, 68);
+}
+
+#dark-text:hover {
+    color: rgba(0,0,0,1);
+}
+
+#div-pad-center {
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#center-text {
+    text-align: center;
+}
+
+#footer-left-align {
+    margin-left: 50%;
+}
+
+#glyph-hover:hover {
+    color: lightblue;
+}
+
+.banner-img {
+    width: 600px;
+    height: 400px;
+}
