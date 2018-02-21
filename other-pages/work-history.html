@@ -47,17 +47,133 @@
         </div>
     </nav>
 
-    <!-- Maybe use jumbotrons to lay down large banner images related to previous work experiences -->
-    <div>
-        <img class='banner-img' src="../images/moa-drone.jpg" alt="Volumetrics via Photogrammetry at the Anchorage Landfill">
+    <p></p>
+
+    <div class='container' id='blog-wrap'>
+        <h4>
+            Welcome to my projects page! Here, you can read on to see what projects I've been involved with. 
+            If you're interested, please feel free to also check out my 
+            <a href="./website-resume.pdf">resume/CV</a>.
+        </h4>
+
+        <hr id="darkline">
+        <div class="fig-div container">
+            <figure class="figure">
+                <img src="../images/moa-drone.jpg" class="figure-img img-fluid rounded" alt="Volumetrics via Photogrammetry at the Anchorage Landfill">
+                <figcaption class="figure-caption">
+                    K2Dronotics prepares to collect LiDAR and photogrammetry data at the Anchorage Landfill.
+                </figcaption>
+            </figure>
+        </div>  
+
+        <h3>Anchorage Landfill Drone Feasibility Study</h3>
+        <p>
+            With the expanding use of drones for performing services such as photography, geographic mapping, 
+            cargo transport, etc, it's not surprising that municipalities such as Anchorage, Alaska are looking for ways
+            to apply drone technology to cut costs. Working under Dr. Aaron Doston with the University of Alaska 
+            Anchorage, I had the responsibility of analyzing photogrammetric data collected by K2Dronotics to calculate
+            volume differences over weekly time frames at the Anchorage Landfill. Volume differences can be used to 
+            determine the amount of trash being deposited at the landfill, and how much cover (gravel, wood) is 
+            being laid over the trash. Furthermore, as the landfill crew compacts the trash down, a baseline rate of 
+            compaction can be determined from the volume differences, ultimately allowing for an estimate on landfill 
+            lifespan. To analyze incoming photogrammetry data, I heavily utilized the Numpy library to grid the data 
+            and perform a Reimann summation for estimating volume differences on a weekly basis. Matplotlib was used 
+            for data visualization including 3d point cloud and contour plot construction. The ultimate outcome 
+            was the demonstration of drone aerial photogrammetry as being an efficient method for producing rough 
+            estimates of landfill volume changes in timely manner.
+        </p>
+
+        <hr id="darkline">
+        <div class="fig-div container">
+            <figure class="figure">
+                <img src="../images/NSB-ABM-TRI.png" class="figure-img img-fluid rounded" alt="NSB ABM Model Terrain Roughness Background">
+                <figcaption class="figure-caption">
+                    Environmental driver layers including terrain roughness (above) drive caribou movement behaviors 
+                    in the North Slope Borough Subsistence Hunting Agent-Based Model.
+                </figcaption>
+            </figure>
+        </div>
+
+        <h3>Subsistence Hunting Agent-Based Model</h3>
+        <p>
+            As global climate change pressures caribou populations across the Arctic, increasing human development 
+            further restricts both available caribou habitat and subsistence hunting grounds. I am currently working 
+            with Dr. Martin Cenek at the University of Alaska Anchorage to understand caribou behavior dynamics 
+            through agent-based modeling (ABM), a powerful modeling technique relying on anonymous agents with restricted 
+            logical decision-making capabilities (akin to humans). The enforcement of non-omnipotence on the agents 
+            in ABMs results in agents interacting with one another in complex ways similar to how individuals interact
+            with each other in real life. Indepedent agents arive at decisions through assessing their state and 
+            situation. For caribou agents, state could be energy level and situation the quality of habitat 
+            immediately available. Agents also have the capability to adapt to changing environments through the 
+            machine-learning technique of genetic algorithms (GAs). GAs embody the concept of Darwinian evolution, with
+            agents that enjoy a greater degree of success being more likely to survive and pass on their decision 
+            making characteristics. The ultimate objective of this project is to simulate different development and 
+            climate change scenarios on the North Slope of Alaska to understand how subsistence hunting might be 
+            impacted. Currently, the project is nearing completion, with several publications currently in the works.
+        </p>
+
+        <hr id="darkline">
+        <div class="fig-div container">
+            <figure class="figure">
+                <img src="../images/ugrs-poster.jpg" class="figure-img img-fluid rounded" alt="Fisheries ABM Poster Presentation">
+                <figcaption class="figure-caption">
+                    Presentation of the Kenai River Fisheries Agent-Based Model at one of University of Alaska 
+                    Anchorage's research symposiums.
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <p></p> -->
+        <h3>Kenai River Fisheries Agent-Based Model</h3>
+        <p>
+            Global climate change poses a significant threat to salmon fisheries. As streams and oceans warm, 
+            salmon mortality increases and salmon behaviors undergo shifts in an attempt to adapt. In Southeast 
+            Alaska, the impact of a warming climate has led to altered start and duration of migration timing for 
+            returning salmon species. The Kenai River may be next to experience such temporal shifts in migration 
+            timing, potentially disturbing the complex dynamics of the commercial and personal-use fisheries present 
+            there. Complicating the matter, the river has two different species of salmon returning at the same time: 
+            a large run (~ 2-6 million) of <em>Oncorhynchus nerka</em> (sockeye salmon) along with a much smaller 
+            run (~ 30,000) of <em>Oncorhynchus tshawytscha</em> (Chinook salmon). The vastly different sizes of these
+            runs paired with their concurrency necessitates complex management decisions opening and closing the 
+            fisheries to try and maximize sockeye salmon harvest and minimize Chinook salmon by-catch. As the peak run 
+            timing of these returning salmon species shifts, social dynamics such as personal-use fishery participation 
+            and commerical fishery gear regulation will shift. To understand the net outcome of the different possible 
+            scenarios at the Kenai River, I constructed an ABM to serve as a simulation platform for conducting 
+            scenario-based studies. My work has resulted in a published masters thesis and three journal publications 
+            in collaboration with Dr. Martin Cenek. For greater detail on the matter, please refer to the publications 
+            below.
+        </p>
+        <p><span style="font-weight: 800;">Publications:</span></p>
+        <ul>
+            <li>
+                Scenario-Based Studies Using an Agent-Based Model to Investigate Impacts of Socio-Ecological 
+                Changes at the Kenai River: Implications for Fisheries and Salmon Processors
+                <ul>
+                    <li>Oct 2017 - ProQuest</li>
+                </ul>
+            </li>
+            <li>
+                An Adaptable Agent-Based Model for Guiding Multi-Species Pacific Salmon Fisheries Management 
+                Within a SES Framework
+                <ul>
+                    <li>Sep 2017 - Elsevier, Ecological Modelling</li>
+                </ul>
+            </li>
+            <li>
+                How will the Kenai Fisheries Respond to Changing Environmental Conditions: Scenario Based Studies 
+                of Coupled Socio-Ecological Systems Dynamics Using an Agent-Based Model
+                <ul>
+                    <li>Dec 2017 - IEEE</li>
+                </ul>
+            </li>
+            <li>
+                Developing High Fidelity, Data Driven, Verified Agent Based Models of Coupled Socio-Ecological 
+                Systems of Alaska Fisheries
+                <ul>
+                    <li>Oct 2017 - Springer</li>
+                </ul>
+            </li>
+        </ul>
     </div>
-
-    <!-- Drone pic from K2Dronotics, animation of 3d point cloud of landfill -->
-
-    <!-- Splash banner tilted angle of the NSB ABM -->
-
-    <!-- Splash banner of salmon sim ABM (Maybe include plots, publication links) -->
-    <!-- Could also include pics from undergrad reseach symposium. -->
 
     <script src="./personal-website.js"></script>
 
