@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Work</title>
     <link rel="stylesheet" type="text/css" media="screen" href="../personal-website.css" />
-    <!-- <link rel="stylesheet" href="./css/bootstrap.css" type="text/css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="body-style">
@@ -50,22 +48,52 @@
     <p></p>
 
     <div class='container' id='blog-wrap'>
-        <h4>
+        <h3 style="padding-bottom: 24px;">
             Welcome to my projects page! Here, you can read on to see what projects I've been involved with. 
             If you're interested, please feel free to also check out my 
-            <a href="./website-resume.pdf">resume/CV</a>.
-        </h4>
+            <a href="./resume.pdf">resume/CV</a>.
+        </h3>
 
-        <hr id="darkline">
+        <!-- <hr id="darkline"> -->
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-0"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12" id="div-pad-center">
+                <div class="fig-div container">
+                    <figure class="figure">
+                        <img src="../images/MOA-drone.jpg" class="figure-img img-fluid rounded" alt="Volumetrics via Photogrammetry at the Anchorage Landfill">
+                        <figcaption class="figure-caption">
+                            K2Dronotics prepares to collect LiDAR and photogrammetry data at the Anchorage Landfill.
+                        </figcaption>
+                    </figure>
+                </div>  
+                <h3>Anchorage Landfill Drone Feasibility Study</h3>
+                <p>
+                    With the expanding use of drones for performing services such as photography, geographic mapping, 
+                    cargo transport, etc, it's not surprising that municipalities such as Anchorage, Alaska are looking for ways
+                    to apply drone technology to cut costs. Working under Dr. Aaron Doston with the University of Alaska 
+                    Anchorage, I had the responsibility of analyzing photogrammetric data collected by K2Dronotics to calculate
+                    volume differences over weekly time frames at the Anchorage Landfill. Volume differences can be used to 
+                    determine the amount of trash being deposited at the landfill, and how much cover (gravel, wood) is 
+                    being laid over the trash. Furthermore, as the landfill crew compacts the trash down, a baseline rate of 
+                    compaction can be determined from the volume differences, ultimately allowing for an estimate on landfill 
+                    lifespan. To analyze incoming photogrammetry data, I heavily utilized the Numpy library to grid the data 
+                    and perform a Reimann summation for estimating volume differences on a weekly basis. Matplotlib was used 
+                    for data visualization including 3d point cloud and contour plot construction. The ultimate outcome 
+                    was the demonstration of drone aerial photogrammetry as being an efficient method for producing rough 
+                    estimates of landfill volume changes in timely manner.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-0"></div>
+        </div>
+
         <div class="fig-div container">
             <figure class="figure">
-                <img src="../images/moa-drone.jpg" class="figure-img img-fluid rounded" alt="Volumetrics via Photogrammetry at the Anchorage Landfill">
+                <img src="../images/MOA-drone.jpg" class="figure-img img-fluid rounded" alt="Volumetrics via Photogrammetry at the Anchorage Landfill">
                 <figcaption class="figure-caption">
                     K2Dronotics prepares to collect LiDAR and photogrammetry data at the Anchorage Landfill.
                 </figcaption>
             </figure>
         </div>  
-
         <h3>Anchorage Landfill Drone Feasibility Study</h3>
         <p>
             With the expanding use of drones for performing services such as photography, geographic mapping, 
@@ -122,7 +150,6 @@
                 </figcaption>
             </figure>
         </div>
-        <!-- <p></p> -->
         <h3>Kenai River Fisheries Agent-Based Model</h3>
         <p>
             Global climate change poses a significant threat to salmon fisheries. As streams and oceans warm, 
@@ -145,29 +172,37 @@
         <p><span style="font-weight: 800;">Publications:</span></p>
         <ul>
             <li>
-                Scenario-Based Studies Using an Agent-Based Model to Investigate Impacts of Socio-Ecological 
-                Changes at the Kenai River: Implications for Fisheries and Salmon Processors
+                <a href="https://search.proquest.com/openview/17918211a4366e468a342e9383489cfe/1?pq-origsite=gscholar&cbl=18750&diss=y">
+                    Scenario-Based Studies Using an Agent-Based Model to Investigate Impacts of Socio-Ecological 
+                    Changes at the Kenai River: Implications for Fisheries and Salmon Processors
+                </a>
                 <ul>
                     <li>Oct 2017 - ProQuest</li>
                 </ul>
             </li>
             <li>
-                An Adaptable Agent-Based Model for Guiding Multi-Species Pacific Salmon Fisheries Management 
-                Within a SES Framework
+                <a href="https://www.sciencedirect.com/science/article/pii/S0304380016307347">
+                    An Adaptable Agent-Based Model for Guiding Multi-Species Pacific Salmon Fisheries Management 
+                    Within a SES Framework
+                </a>
                 <ul>
                     <li>Sep 2017 - Elsevier, Ecological Modelling</li>
                 </ul>
             </li>
             <li>
-                How will the Kenai Fisheries Respond to Changing Environmental Conditions: Scenario Based Studies 
-                of Coupled Socio-Ecological Systems Dynamics Using an Agent-Based Model
+                <a href="http://ieeexplore.ieee.org/document/8232373/">
+                    How will the Kenai Fisheries Respond to Changing Environmental Conditions: Scenario Based Studies 
+                    of Coupled Socio-Ecological Systems Dynamics Using an Agent-Based Model
+                </a>
                 <ul>
                     <li>Dec 2017 - IEEE</li>
                 </ul>
             </li>
             <li>
-                Developing High Fidelity, Data Driven, Verified Agent Based Models of Coupled Socio-Ecological 
-                Systems of Alaska Fisheries
+                <a href="https://link.springer.com/chapter/10.1007/978-3-319-65993-0_1">
+                    Developing High Fidelity, Data Driven, Verified Agent Based Models of Coupled Socio-Ecological 
+                    Systems of Alaska Fisheries
+                </a>
                 <ul>
                     <li>Oct 2017 - Springer</li>
                 </ul>

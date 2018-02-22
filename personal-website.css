@@ -9,17 +9,11 @@
 }
 
 #hello {
-    /* font-family: 'Indie Flower', cursive; */
-    /* font-family: 'Dancing Script', cursive; */
-    /* font-family: 'Kavivanar', cursive; */
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
 }
 
 #pretty {
-    /* font-family: 'Indie Flower', cursive; */
-    /* font-family: 'Dancing Script', cursive; */
-    /* font-family: 'Kavivanar', cursive; */
     font-size: 36px;
     text-align: left;
 }
@@ -91,9 +85,19 @@ img#main-photos {
     padding-right: 10%;
 }
 
+#blog-wrap ol {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 div .fig-div {
     padding-top: 12px;
     padding-bottom: 12px;
     width: 67%;
     text-align: center;
+}
+
+ul li a {
+    color: #292b2c;
 }
